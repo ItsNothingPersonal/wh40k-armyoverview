@@ -24,7 +24,8 @@ export const data: readonly Unit[] = [
 						'Once per battle, in your Command phase, this model can use this ability. If it does, until the start of your next Command phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Canoness',
@@ -49,7 +50,8 @@ export const data: readonly Unit[] = [
 						'Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Palatine',
@@ -75,7 +77,8 @@ export const data: readonly Unit[] = [
 						'the target of that attack suffers 1 mortal wound in addition to any normal damage.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Junith Eruita',
@@ -100,7 +103,8 @@ export const data: readonly Unit[] = [
 						'If this model is on the battlefield at the start of your Command phase, you gain 1CP.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Missionary',
@@ -125,7 +129,8 @@ export const data: readonly Unit[] = [
 						'Each time this model makes a melee attack, unless this model’s unit is Battle-shocked, you can re-roll the Hit roll.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Saint Celestine',
@@ -156,7 +161,8 @@ export const data: readonly Unit[] = [
 						'close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Triumph of Saint Katherine',
@@ -176,7 +182,8 @@ export const data: readonly Unit[] = [
 						'At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section (see left). Until the start of the next battle round, this model has those abilities.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Ephrael Stern',
@@ -202,7 +209,8 @@ export const data: readonly Unit[] = [
 						'You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Kyganil of the Bloody Tears',
@@ -222,7 +230,8 @@ export const data: readonly Unit[] = [
 						'You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Battle Sister Squad',
@@ -246,7 +255,8 @@ export const data: readonly Unit[] = [
 						'At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, you gain 1 Miracle dice.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Novitiate Superior',
@@ -265,7 +275,8 @@ export const data: readonly Unit[] = [
 						'Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Sister Novitiate',
@@ -284,7 +295,8 @@ export const data: readonly Unit[] = [
 						'Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Aestred Thurga',
@@ -304,7 +316,8 @@ export const data: readonly Unit[] = [
 						'While Aestred Thurga is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Agathae Dolan',
@@ -324,7 +337,8 @@ export const data: readonly Unit[] = [
 						'While Agathae Dolan is part of this unit, each time this unit performs an Act of Faith, the result of one of the Miracle dice used in that Act of Faith is first improved by 1 (to a maximum of 6)'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Imagifier',
@@ -350,7 +364,8 @@ export const data: readonly Unit[] = [
 						'While this model is leading a unit, models in that unit have a 4+ invulnerable save. While this model is leading a Celestian Sacresants unit, models in that unit have a Save characteristic of 2+.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Dialogus',
@@ -375,7 +390,8 @@ export const data: readonly Unit[] = [
 						'While this model is leading a unit, each time this model’s unit performs an Act of Faith, the result of one of the Miracle dice used in that Act of Faith is first changed to a 6.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Preacher',
@@ -400,7 +416,8 @@ export const data: readonly Unit[] = [
 						'Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 2.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Celestian Sacresants',
@@ -419,7 +436,8 @@ export const data: readonly Unit[] = [
 						'While a Canoness, Palatine or Junith Eruita model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Hospitaller',
@@ -445,7 +463,8 @@ export const data: readonly Unit[] = [
 						'A unit can only be affected by this ability once per turn.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Dogmata',
@@ -470,7 +489,8 @@ export const data: readonly Unit[] = [
 						'While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Paragon Warsuits',
@@ -489,7 +509,8 @@ export const data: readonly Unit[] = [
 						'This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Repentia Superior',
@@ -510,7 +531,8 @@ export const data: readonly Unit[] = [
 						'if this unit made a Charge move this turn, you can also re-roll the Wound roll.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Sisters Repentia',
@@ -531,7 +553,8 @@ export const data: readonly Unit[] = [
 						'if this unit made a Charge move this turn, you can also re-roll the Wound roll.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Crusaders',
@@ -550,7 +573,8 @@ export const data: readonly Unit[] = [
 						'While a Missionary or Preacher model is leading this unit, models in this unit have the Feel No Pain 4+ ability against mortal wounds.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 4
 	},
 	{
 		name: 'Death Cult Assassins',
@@ -570,7 +594,8 @@ export const data: readonly Unit[] = [
 						'Each time a model in this unit makes an attack that targets a Character unit, re-roll a Wound roll of 1.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 5
 	},
 	{
 		name: 'Dominion Squad',
@@ -594,7 +619,8 @@ export const data: readonly Unit[] = [
 					additionalInformation: 'You can re-roll Advance rolls made for this unit.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Seraphim Squad',
@@ -615,7 +641,8 @@ export const data: readonly Unit[] = [
 						'If it does, until the end of the turn, this unit is not eligible to declare a charge.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 5
 	},
 	{
 		name: 'Zephyrim Squad',
@@ -635,7 +662,8 @@ export const data: readonly Unit[] = [
 						'Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, add 1 to the Strength characteristic of that attack.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 5
 	},
 	{
 		name: 'Retributor Squad',
@@ -659,7 +687,8 @@ export const data: readonly Unit[] = [
 						'Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Mortifiers',
@@ -682,7 +711,8 @@ export const data: readonly Unit[] = [
 						'Each time this unit makes a Charge move, until the end of the phase, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Penitent Engines',
@@ -725,7 +755,8 @@ export const data: readonly Unit[] = [
 						'While a friendly Adepta Sororitas Infantry unit is within 6" of this model, improve the Leadership characteristic of models in that unit by 1.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Castigator',
@@ -747,7 +778,8 @@ export const data: readonly Unit[] = [
 						'After this model has shot, select one enemy unit that was hit by its Castigator autocannons or Castigator battle cannon this phase. That unit must take a Battle-shock test.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Sororitas Rhino',
@@ -770,7 +802,8 @@ export const data: readonly Unit[] = [
 						'At the start of your Command phase, this model regains 1 lost wound.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Immolator',
@@ -791,7 +824,8 @@ export const data: readonly Unit[] = [
 						'each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.'
 				}
 			]
-		}
+		},
+		invulnerableSave: 6
 	},
 	{
 		name: 'Arco-Flagellants',

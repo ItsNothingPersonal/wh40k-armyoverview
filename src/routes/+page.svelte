@@ -11,6 +11,7 @@
 		CloseButton,
 		Drawer,
 		Heading,
+		P,
 		Table,
 		TableBody,
 		TableBodyCell,
@@ -42,6 +43,10 @@
 		const sorted = [...$sortableData].sort((a, b) => {
 			const aVal = a[key];
 			const bVal = b[key];
+			if (aVal === undefined || bVal === undefined) {
+				return 0;
+			}
+
 			if (aVal < bVal) {
 				return -direction;
 			} else if (aVal > bVal) {
@@ -187,4 +192,9 @@
 			<PersonalAbilityExplained abilities={$selectedRow.abilities.personal} />
 		</div>
 	</div>
+
+	{#if $selectedRow.invulnerableSave}
+		<Heading tag="h3" class="text-left">Invulnerable Save</Heading>
+		<P>{$selectedRow.invulnerableSave}</P>
+	{/if}
 </Drawer>

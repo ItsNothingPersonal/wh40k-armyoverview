@@ -9,4 +9,5 @@ export type Unit = {
 	leadership: number;
 	objectiveControl: number;
 	abilities: Abilities;
+	invulnerableSave?: number;
 };

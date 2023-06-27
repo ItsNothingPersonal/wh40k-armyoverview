@@ -5,7 +5,7 @@
 	export let abilities: Required<Ability[]>;
 </script>
 
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-1 mb-3">
 	{#each abilities as ability}
 		<Heading tag="h5">
 			{ability.name}
