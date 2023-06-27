@@ -110,12 +110,14 @@
 			</div>
 		</TableHeadCell>
 		<TableHeadCell on:click={() => sortTable('objectiveControl')}>
-			Objective control
-			{#if $sortDirection === 1 && $sortKey === 'objectiveControl'}
-				<ChevronDown size="15" />
-			{:else if $sortKey === 'objectiveControl'}
-				<ChevronUp size="15" />
-			{/if}
+			<div class="flex items-center gap-1">
+				Objective control
+				{#if $sortDirection === 1 && $sortKey === 'objectiveControl'}
+					<ChevronDown size="15" />
+				{:else if $sortKey === 'objectiveControl'}
+					<ChevronUp size="15" />
+				{/if}
+			</div>
 		</TableHeadCell>
 	</TableHead>
 	<TableBody>

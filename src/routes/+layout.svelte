@@ -7,6 +7,6 @@
 </script>
 
 <DarkMode btnClass={darkmodebtn} />
-<main class="mx-auto max-w-3xl text-center">
+<main class="mx-auto max-w-5xl text-center">
 	<slot />
 </main>
