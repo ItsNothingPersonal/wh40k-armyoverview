@@ -5,7 +5,7 @@
 	export let ability: string;
 </script>
 
-<div class="flex gap-1">
+<div class="flex gap-1 mb-3">
 	{#if factionAbilities.get(ability)}
 		<P class="underline decoration-dotted" id={ability.replaceAll(' ', '_')}>
 			{ability}

@@ -2,6 +2,7 @@
 	import DeploymentAbilityExplained from '@/components/DeploymentAbilityExplained.svelte';
 	import FactionAbilityExplained from '@/components/FactionAbilityExplained.svelte';
 	import InfoBubble from '@/components/InfoBubble.svelte';
+	import PersonalAbilityExplained from '@/components/PersonalAbilityExplained.svelte';
 	import { data } from '@/data/adeptaSororitas';
 	import type { Unit } from '@/types/unit';
 	import {
@@ -10,7 +11,6 @@
 		CloseButton,
 		Drawer,
 		Heading,
-		P,
 		Table,
 		TableBody,
 		TableBodyCell,
@@ -145,7 +145,7 @@
 				id="click"
 			>
 				<TableBodyCell>{unitData.name}</TableBodyCell>
-				<TableBodyCell>{unitData.movement}''</TableBodyCell>
+				<TableBodyCell>{unitData.movement}"</TableBodyCell>
 				<TableBodyCell>{unitData.toughness}</TableBodyCell>
 				<TableBodyCell>{unitData.save}+</TableBodyCell>
 				<TableBodyCell>{unitData.wounds}</TableBodyCell>
@@ -174,13 +174,17 @@
 		<CloseButton on:click={() => hiddenDrawer.set(true)} class="mb-4 dark:text-white" />
 	</div>
 
-	<Heading tag="h3">Abilities</Heading>
-	<div class="flex gap-2">
+	<Heading tag="h3" class="text-left">Abilities</Heading>
+	<div class="flex gap-2 text-left">
 		<div>
-			<P weight="bold">Core</P>
-			<DeploymentAbilityExplained abilities={$selectedRow.abilities.core ?? []} />
-			<P weight="bold">Faction</P>
+			{#if $selectedRow.abilities.core}
+				<Heading tag="h4">Core</Heading>
+				<DeploymentAbilityExplained abilities={$selectedRow.abilities.core} />
+			{/if}
+			<Heading tag="h4">Faction</Heading>
 			<FactionAbilityExplained ability={$selectedRow.abilities.faction} />
+			<Heading tag="h4">Personal</Heading>
+			<PersonalAbilityExplained abilities={$selectedRow.abilities.personal} />
 		</div>
 	</div>
 </Drawer>

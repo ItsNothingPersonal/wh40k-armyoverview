@@ -6,13 +6,13 @@
 	export let abilities: Ability[];
 </script>
 
-<div class="flex gap-1">
+<div class="flex gap-1 mb-3">
 	{#each abilities as ability}
 		{#if deploymentAbilities.get(ability.name)}
 			<P class="underline decoration-dotted" id={ability.name.replaceAll(' ', '_')}>
 				{ability.name}
-				{#if ability.modifier}
-					{' '}{ability.modifier}
+				{#if ability.additionalInformation}
+					{' '}{ability.additionalInformation}
 				{/if}
 				{' '}
 			</P>

@@ -1,4 +1,4 @@
 export type Ability = {
 	name: string;
-	modifier?: number | string;
+	additionalInformation?: number | string;
 };
