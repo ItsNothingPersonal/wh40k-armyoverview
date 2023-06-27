@@ -1,3 +1,5 @@
+import type { Abilities } from './abilities';
+
 export type Unit = {
 	name: string;
 	movement: number;
@@ -6,4 +8,5 @@ export type Unit = {
 	wounds: number;
 	leadership: number;
 	objectiveControl: number;
+	abilities: Abilities;
 };

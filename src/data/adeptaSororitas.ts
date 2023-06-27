@@ -8,7 +8,11 @@ export const data: readonly Unit[] = [
 		save: 2,
 		wounds: 8,
 		leadership: 6,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [{ name: 'Deadly Demise', modifier: 1 }, { name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Canoness',
@@ -17,7 +21,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 4,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Palatine',
@@ -26,7 +34,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }, { name: 'Scouts', modifier: 6 }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Junith Eruita',
@@ -35,7 +47,11 @@ export const data: readonly Unit[] = [
 		save: 2,
 		wounds: 6,
 		leadership: 6,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [{ name: 'Deadly Demise', modifier: 1 }, { name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Missionary',
@@ -44,7 +60,11 @@ export const data: readonly Unit[] = [
 		save: 6,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Saint Celestine',
@@ -53,7 +73,11 @@ export const data: readonly Unit[] = [
 		save: 2,
 		wounds: 5,
 		leadership: 6,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }, { name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Triumph of Saint Katherine',
@@ -62,7 +86,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 18,
 		leadership: 6,
-		objectiveControl: 6
+		objectiveControl: 6,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Ephrael Stern',
@@ -71,7 +99,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 5,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }, { name: 'Fights First' }, { name: 'Lone Operative' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Kyganil of the Bloody Tears',
@@ -80,7 +112,11 @@ export const data: readonly Unit[] = [
 		save: 6,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }, { name: 'Fights First' }, { name: 'Lone Operative' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Battle Sister Squad',
@@ -89,7 +125,10 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Novitiate Superior',
@@ -98,7 +137,10 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Sister Novitiate',
@@ -107,7 +149,10 @@ export const data: readonly Unit[] = [
 		save: 4,
 		wounds: 1,
 		leadership: 8,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Aestred Thurga',
@@ -116,7 +161,11 @@ export const data: readonly Unit[] = [
 		save: 2,
 		wounds: 4,
 		leadership: 6,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Agathae Dolan',
@@ -125,7 +174,11 @@ export const data: readonly Unit[] = [
 		save: 6,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Imagifier',
@@ -134,7 +187,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 3,
 		leadership: 6,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Dialogus',
@@ -143,7 +200,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 3,
 		leadership: 6,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Preacher',
@@ -152,7 +213,11 @@ export const data: readonly Unit[] = [
 		save: 6,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Celestian Sacresants',
@@ -161,7 +226,10 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Hospitaller',
@@ -170,7 +238,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 3,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Dogmata',
@@ -179,7 +251,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 3,
 		leadership: 6,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Leader' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Paragon Warsuits',
@@ -188,7 +264,10 @@ export const data: readonly Unit[] = [
 		save: 2,
 		wounds: 4,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Repentia Superior',
@@ -197,7 +276,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Feel No Pain', modifier: 5 }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Sisters Repentia',
@@ -206,7 +289,11 @@ export const data: readonly Unit[] = [
 		save: 7,
 		wounds: 1,
 		leadership: 8,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Feel No Pain', modifier: 5 }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Crusaders',
@@ -215,7 +302,10 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Death Cult Assassins',
@@ -224,7 +314,11 @@ export const data: readonly Unit[] = [
 		save: 5,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Fights First' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Dominion Squad',
@@ -233,7 +327,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Scouts', modifier: 6 }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Seraphim Squad',
@@ -242,7 +340,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Zephyrim Squad',
@@ -251,7 +353,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Retributor Squad',
@@ -260,7 +366,10 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 1,
 		leadership: 7,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Mortifiers',
@@ -269,7 +378,14 @@ export const data: readonly Unit[] = [
 		save: 4,
 		wounds: 5,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [
+				{ name: 'Deadly Demise', modifier: 1 },
+				{ name: 'Feel No Pain', modifier: 5 }
+			],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Penitent Engines',
@@ -278,7 +394,14 @@ export const data: readonly Unit[] = [
 		save: 4,
 		wounds: 5,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [
+				{ name: 'Deadly Demise', modifier: 1 },
+				{ name: 'Feel No Pain', modifier: 5 }
+			],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Exorcist',
@@ -287,7 +410,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 11,
 		leadership: 7,
-		objectiveControl: 3
+		objectiveControl: 3,
+		abilities: {
+			core: [{ name: 'Deadly Demise', modifier: 'D3' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Castigator',
@@ -296,7 +423,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 11,
 		leadership: 7,
-		objectiveControl: 3
+		objectiveControl: 3,
+		abilities: {
+			core: [{ name: 'Deadly Demise', modifier: 'D3' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Sororitas Rhino',
@@ -305,7 +436,14 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 10,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [
+				{ name: 'Deadly Demise', modifier: 'D3' },
+				{ name: 'Firing Deck', modifier: 2 }
+			],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Immolator',
@@ -314,7 +452,11 @@ export const data: readonly Unit[] = [
 		save: 3,
 		wounds: 11,
 		leadership: 7,
-		objectiveControl: 2
+		objectiveControl: 2,
+		abilities: {
+			core: [{ name: 'Deadly Demise', modifier: 'D3' }],
+			faction: 'Acts of Faith'
+		}
 	},
 	{
 		name: 'Arco-Flagellants',
@@ -323,6 +465,10 @@ export const data: readonly Unit[] = [
 		save: 7,
 		wounds: 2,
 		leadership: 8,
-		objectiveControl: 1
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Feel No Pain', modifier: 4 }],
+			faction: 'Acts of Faith'
+		}
 	}
 ];

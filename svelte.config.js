@@ -18,7 +18,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@/types/*': 'src/types/*',
-			'@/data/*': 'src/data/*'
+			'@/data/*': 'src/data/*',
+			'@/components/*': 'src/components/*'
 		},
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH

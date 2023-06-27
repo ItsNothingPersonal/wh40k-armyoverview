@@ -1,10 +1,16 @@
 <script lang="ts">
+	import DeploymentAbilityExplained from '@/components/DeploymentAbilityExplained.svelte';
+	import FactionAbilityExplained from '@/components/FactionAbilityExplained.svelte';
+	import InfoBubble from '@/components/InfoBubble.svelte';
 	import { data } from '@/data/adeptaSororitas';
 	import type { Unit } from '@/types/unit';
 	import {
 		ChevronDown,
 		ChevronUp,
+		CloseButton,
+		Drawer,
 		Heading,
+		P,
 		Table,
 		TableBody,
 		TableBodyCell,
@@ -12,6 +18,7 @@
 		TableHead,
 		TableHeadCell
 	} from 'flowbite-svelte';
+	import { sineIn } from 'svelte/easing';
 	import { writable } from 'svelte/store';
 
 	const sortableData = writable(JSON.parse(JSON.stringify(data)) as Unit[]);
@@ -27,6 +34,7 @@
 		}
 	};
 	const selectedArmy = writable('Adepta Sororitas');
+	const selectedRow = writable<Unit>();
 
 	$: {
 		const key = $sortKey;
@@ -43,11 +51,18 @@
 		});
 		sortableData.set(sorted);
 	}
+
+	let hiddenDrawer = writable(true);
+	let transitionParamsRight = {
+		x: 320,
+		duration: 200,
+		easing: sineIn
+	};
 </script>
 
 <Heading tag="h1">W40K - Army Overview</Heading>
 <Heading tag="h2" class="p-4">{$selectedArmy}</Heading>
-<Table hoverable shadow>
+<Table hoverable shadow divClass="w-full overflow-x-auto">
 	<TableHead>
 		<TableHeadCell on:click={() => sortTable('name')}>
 			<div class="flex items-center gap-1">
@@ -120,9 +135,15 @@
 			</div>
 		</TableHeadCell>
 	</TableHead>
-	<TableBody>
-		{#each $sortableData as unitData (unitData.name)}
-			<TableBodyRow>
+	<TableBody tableBodyClass="w-full min-w-full">
+		{#each $sortableData as unitData, index (unitData.name)}
+			<TableBodyRow
+				on:click={() => {
+					selectedRow.set(unitData);
+					hiddenDrawer.set(false);
+				}}
+				id="click"
+			>
 				<TableBodyCell>{unitData.name}</TableBodyCell>
 				<TableBodyCell>{unitData.movement}''</TableBodyCell>
 				<TableBodyCell>{unitData.toughness}</TableBodyCell>
@@ -134,3 +155,32 @@
 		{/each}
 	</TableBody>
 </Table>
+
+<Drawer
+	placement="right"
+	transitionType="fly"
+	transitionParams={transitionParamsRight}
+	bind:hidden={$hiddenDrawer}
+	id="infoSidebar"
+>
+	<div class="flex items-center">
+		<h5
+			id="drawer-label"
+			class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
+		>
+			<InfoBubble />
+			Info
+		</h5>
+		<CloseButton on:click={() => hiddenDrawer.set(true)} class="mb-4 dark:text-white" />
+	</div>
+
+	<Heading tag="h3">Abilities</Heading>
+	<div class="flex gap-2">
+		<div>
+			<P weight="bold">Core</P>
+			<DeploymentAbilityExplained abilities={$selectedRow.abilities.core ?? []} />
+			<P weight="bold">Faction</P>
+			<FactionAbilityExplained ability={$selectedRow.abilities.faction} />
+		</div>
+	</div>
+</Drawer>
