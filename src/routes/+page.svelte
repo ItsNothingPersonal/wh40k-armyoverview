@@ -195,6 +195,6 @@
 
 	{#if $selectedRow.invulnerableSave}
 		<Heading tag="h3" class="text-left">Invulnerable Save</Heading>
-		<P>{$selectedRow.invulnerableSave}</P>
+		<P>{$selectedRow.invulnerableSave}+</P>
 	{/if}
 </Drawer>
