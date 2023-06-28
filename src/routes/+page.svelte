@@ -141,7 +141,7 @@
 		</TableHeadCell>
 	</TableHead>
 	<TableBody tableBodyClass="w-full min-w-full">
-		{#each $sortableData as unitData, index (unitData.name)}
+		{#each $sortableData as unitData (unitData.name)}
 			<TableBodyRow
 				on:click={() => {
 					selectedRow.set(unitData);
