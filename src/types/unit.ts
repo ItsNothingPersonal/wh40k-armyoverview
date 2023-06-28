@@ -10,4 +10,6 @@ export type Unit = {
 	objectiveControl: number;
 	abilities: Abilities;
 	invulnerableSave?: number;
+	factionKeyword: string;
+	keywords: string[];
 };

@@ -25,7 +25,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Walker', 'Character', 'Epic Hero', 'Imperium', 'Morvenn Vahl']
 	},
 	{
 		name: 'Canoness',
@@ -51,7 +53,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Canoness']
 	},
 	{
 		name: 'Palatine',
@@ -78,7 +82,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Palatine']
 	},
 	{
 		name: 'Junith Eruita',
@@ -104,7 +110,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Fly', 'Epic Hero', 'Imperium', 'Junith Eruita']
 	},
 	{
 		name: 'Missionary',
@@ -130,11 +138,13 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Missionary']
 	},
 	{
 		name: 'Saint Celestine',
-		movement: 6,
+		movement: 12,
 		toughness: 3,
 		save: 2,
 		wounds: 5,
@@ -162,7 +172,52 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: [
+			'Infantry',
+			'Jump Pack',
+			'Fly',
+			'Grenades',
+			'Imperium',
+			'Character',
+			'Epic Hero',
+			'Saint Celestine'
+		]
+	},
+	{
+		name: 'Geminae Superia',
+		movement: 12,
+		toughness: 3,
+		save: 2,
+		wounds: 2,
+		leadership: 7,
+		objectiveControl: 1,
+		abilities: {
+			core: [{ name: 'Deep Strike' }, { name: 'Leader' }],
+			faction: 'Acts of Faith',
+			personal: [
+				{
+					name: 'Healing Tears',
+					additionalInformation:
+						'While this unit contains a Celestine model, in your Command phase, if this unit is below its Starting Strength, 1 destroyed model is returned to this unit.'
+				},
+				{
+					name: 'Lifewards',
+					additionalInformation:
+						'While this unit contains one or more Geminae Superia models, Celestine has the Feel No Pain 4+ ability'
+				},
+				{
+					name: 'Miraculous Intervention',
+					additionalInformation:
+						'The first time this unit’s Celestine model is destroyed, roll one D6 at the end of the phase. On a 2+, set that Celestine model back up on the battlefield, as ' +
+						'close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining'
+				}
+			]
+		},
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium']
 	},
 	{
 		name: 'Triumph of Saint Katherine',
@@ -183,7 +238,16 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: [
+			'Infantry',
+			'Grenades',
+			'Character',
+			'Epic Hero',
+			'Imperium',
+			'Triumph of Saint Katherine'
+		]
 	},
 	{
 		name: 'Ephrael Stern',
@@ -210,7 +274,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge']
 	},
 	{
 		name: 'Kyganil of the Bloody Tears',
@@ -231,7 +297,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge']
 	},
 	{
 		name: 'Battle Sister Squad',
@@ -256,7 +324,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Battleline', 'Imperium', 'Battle Sisters Squad']
 	},
 	{
 		name: 'Novitiate Superior',
@@ -276,7 +346,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad']
 	},
 	{
 		name: 'Sister Novitiate',
@@ -296,7 +368,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad']
 	},
 	{
 		name: 'Aestred Thurga',
@@ -317,7 +391,16 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: [
+			'Infantry',
+			'Grenades',
+			'Character',
+			'Epic Hero',
+			'Imperium',
+			'Aestred Thurga and Agathae Dolan'
+		]
 	},
 	{
 		name: 'Agathae Dolan',
@@ -338,7 +421,16 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: [
+			'Infantry',
+			'Grenades',
+			'Character',
+			'Epic Hero',
+			'Imperium',
+			'Aestred Thurga and Agathae Dolan'
+		]
 	},
 	{
 		name: 'Imagifier',
@@ -365,7 +457,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Imagifier']
 	},
 	{
 		name: 'Dialogus',
@@ -391,7 +485,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Imperium', 'Dialogus']
 	},
 	{
 		name: 'Preacher',
@@ -417,7 +513,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Imperium', 'Preacher']
 	},
 	{
 		name: 'Celestian Sacresants',
@@ -437,7 +535,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Celestian Sacresants']
 	},
 	{
 		name: 'Hospitaller',
@@ -464,7 +564,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Character', 'Imperium', 'Hospitaller']
 	},
 	{
 		name: 'Dogmata',
@@ -490,7 +592,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Dogmata']
 	},
 	{
 		name: 'Paragon Warsuits',
@@ -510,7 +614,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Walker', 'Grenades', 'Imperium', 'Paragon Warsuits']
 	},
 	{
 		name: 'Repentia Superior',
@@ -532,7 +638,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad']
 	},
 	{
 		name: 'Sisters Repentia',
@@ -554,7 +662,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad']
 	},
 	{
 		name: 'Crusaders',
@@ -574,7 +684,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 4
+		invulnerableSave: 4,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Imperium', 'Crusaders']
 	},
 	{
 		name: 'Death Cult Assassins',
@@ -595,7 +707,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 5
+		invulnerableSave: 5,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Imperium', 'Death Cult Assassins']
 	},
 	{
 		name: 'Dominion Squad',
@@ -620,7 +734,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Dominion Squad']
 	},
 	{
 		name: 'Seraphim Squad',
@@ -642,7 +758,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 5
+		invulnerableSave: 5,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Seraphim Squad']
 	},
 	{
 		name: 'Zephyrim Squad',
@@ -663,7 +781,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 5
+		invulnerableSave: 5,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Zephyrim Squad']
 	},
 	{
 		name: 'Retributor Squad',
@@ -688,7 +808,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Retributor Squad']
 	},
 	{
 		name: 'Mortifiers',
@@ -712,7 +834,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Walker', 'Imperium', 'Mortifiers']
 	},
 	{
 		name: 'Penitent Engines',
@@ -735,7 +859,9 @@ export const data: readonly Unit[] = [
 						'This unit is eligible to declare a charge in a turn in which it Advanced.'
 				}
 			]
-		}
+		},
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Walker', 'Imperium', 'Penitent Engines']
 	},
 	{
 		name: 'Exorcist',
@@ -756,7 +882,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Exorcist']
 	},
 	{
 		name: 'Castigator',
@@ -779,7 +907,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Castigator']
 	},
 	{
 		name: 'Sororitas Rhino',
@@ -803,7 +933,16 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: [
+			'Vehicle',
+			'Transport',
+			'Dedicated Transport',
+			'Smoke',
+			'Imperium',
+			'Sororitas Rhino'
+		]
 	},
 	{
 		name: 'Immolator',
@@ -825,7 +964,9 @@ export const data: readonly Unit[] = [
 				}
 			]
 		},
-		invulnerableSave: 6
+		invulnerableSave: 6,
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Vehicle', 'Smoke', 'Transport', 'Dedicated Transport', 'Imperium', 'Immolator']
 	},
 	{
 		name: 'Arco-Flagellants',
@@ -846,6 +987,8 @@ export const data: readonly Unit[] = [
 						'by models in this unit have an Attacks characteristic of 6 and the [HAZARDOUS] ability.'
 				}
 			]
-		}
+		},
+		factionKeyword: 'Adepta Sororitas',
+		keywords: ['Infantry', 'Imperium', 'Arco-flagellants']
 	}
 ];

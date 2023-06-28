@@ -180,7 +180,7 @@
 	</div>
 
 	<Heading tag="h3" class="text-left">Abilities</Heading>
-	<div class="flex gap-2 text-left">
+	<div class="flex gap-2 text-left mb-3">
 		<div>
 			{#if $selectedRow.abilities.core}
 				<Heading tag="h4">Core</Heading>
@@ -195,6 +195,12 @@
 
 	{#if $selectedRow.invulnerableSave}
 		<Heading tag="h3" class="text-left">Invulnerable Save</Heading>
-		<P>{$selectedRow.invulnerableSave}+</P>
+		<P class="mb-3">{$selectedRow.invulnerableSave}+</P>
 	{/if}
+
+	<Heading tag="h3" class="text-left">Faction Keywords</Heading>
+	<P class="mb-3">{$selectedRow.factionKeyword}</P>
+
+	<Heading tag="h3" class="text-left">Keywords</Heading>
+	<P class="mb-3">{$selectedRow.keywords.join(', ')}</P>
 </Drawer>

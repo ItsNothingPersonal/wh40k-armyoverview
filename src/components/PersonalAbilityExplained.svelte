@@ -27,7 +27,7 @@
 	}
 </script>
 
-<div class="flex flex-col gap-1 mb-3">
+<div class="flex flex-col gap-1">
 	{#each abilities as ability}
 		<Heading tag="h5">
 			{ability.name}
