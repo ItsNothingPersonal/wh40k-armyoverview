@@ -19,7 +19,8 @@ const config = {
 		alias: {
 			'@/types/*': 'src/types/*',
 			'@/data/*': 'src/data/*',
-			'@/components/*': 'src/components/*'
+			'@/components/*': 'src/components/*',
+			'@/enums/*': 'src/enums/*'
 		},
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH

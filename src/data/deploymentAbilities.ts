@@ -1,4 +1,4 @@
-export const deploymentAbilities = new Map<string, string[]>([
+export const deploymentAbilities = new Map<string, string | string[]>([
 	[
 		'Leader',
 		[
@@ -9,9 +9,7 @@ export const deploymentAbilities = new Map<string, string[]>([
 	],
 	[
 		'Deadly Demise',
-		[
-			'Deadly Demise x: When this model is destroyed, roll one D6. On a 6, each unit within 6" suffers ‘x’ mortal wounds'
-		]
+		'Deadly Demise x: When this model is destroyed, roll one D6. On a 6, each unit within 6" suffers ‘x’ mortal wounds'
 	],
 	[
 		'Scouts',
@@ -30,26 +28,18 @@ export const deploymentAbilities = new Map<string, string[]>([
 	],
 	[
 		'Fights First',
-		[
-			'Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability.'
-		]
+		'Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability.'
 	],
 	[
 		'Lone Operative',
-		[
-			'Unless part of an Attached unit (see Leader, page 39), this unit can only be selected as the target of a ranged attack if the attacking model is within 12".'
-		]
+		'Unless part of an Attached unit (see Leader, page 39), this unit can only be selected as the target of a ranged attack if the attacking model is within 12".'
 	],
 	[
 		'Feel No Pain',
-		[
-			'Feel No Pain x+: Each time this model would lose a wound, roll one D6: if the result equals or exceeds ‘x’, that wound is not lost.'
-		]
+		'Feel No Pain x+: Each time this model would lose a wound, roll one D6: if the result equals or exceeds ‘x’, that wound is not lost.'
 	],
 	[
 		'Firing Deck',
-		[
-			'Firing Deck ‘x’: Each time this Transport shoots, select one weapon from up to ‘x’ models embarked within it; this Transport counts as being equipped with those weapons as well.'
-		]
+		'Firing Deck ‘x’: Each time this Transport shoots, select one weapon from up to ‘x’ models embarked within it; this Transport counts as being equipped with those weapons as well.'
 	]
 ]);

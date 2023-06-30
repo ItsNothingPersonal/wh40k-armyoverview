@@ -21,11 +21,15 @@
 				triggeredBy={`#${ability.name.replaceAll(' ', '_')}`}
 				placement="bottom"
 			>
-				<List tag="ul" class="space-y-1 text-left" position="outside">
-					{#each deploymentAbilities.get(ability.name) ?? [] as explanation}
-						<Li><P>{explanation}</P></Li>
-					{/each}
-				</List>
+				{#if Array.isArray(deploymentAbilities.get(ability.name))}
+					<List tag="ul" class="space-y-1 text-left" position="outside">
+						{#each deploymentAbilities.get(ability.name) ?? [] as explanation}
+							<Li><P>{explanation}</P></Li>
+						{/each}
+					</List>
+				{:else}
+					<P>{deploymentAbilities.get(ability.name)}</P>
+				{/if}
 			</Popover>
 		{:else}
 			<P>{ability.name}{' '}</P>

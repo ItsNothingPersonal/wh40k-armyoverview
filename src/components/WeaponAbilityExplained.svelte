@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { weaponKeywords } from '@/data/weaponKeywords';
 	import type { Ability } from '@/types/ability';
-	import { P, Popover } from 'flowbite-svelte';
+	import { Li, List, P, Popover } from 'flowbite-svelte';
 
 	export let abilities: Ability[];
 </script>
@@ -21,7 +21,15 @@
 				triggeredBy={`#${ability.name.replaceAll(' ', '_')}`}
 				placement="bottom"
 			>
-				<P>{weaponKeywords.get(ability.name)}</P>
+				{#if Array.isArray(weaponKeywords.get(ability.name))}
+					<List tag="ul" class="space-y-1 text-left" position="outside">
+						{#each weaponKeywords.get(ability.name) ?? [] as explanation}
+							<Li><P>{explanation}</P></Li>
+						{/each}
+					</List>
+				{:else}
+					<P>{weaponKeywords.get(ability.name)}</P>
+				{/if}
 			</Popover>
 		{:else}
 			<P>{ability.name}{' '}</P>

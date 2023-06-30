@@ -1,8 +1,11 @@
+import { MeleeWeaponName } from '@/enums/meleeWeaponName';
+import { RangedWeaponName } from '@/enums/rangedWeaponName';
+import { UnitName } from '@/enums/unitName';
 import type { Unit } from '@/types/unit';
 
 export const data: readonly Unit[] = [
 	{
-		name: 'Morven Vahl',
+		name: UnitName.MorvennVahl,
 		movement: 8,
 		toughness: 6,
 		save: 2,
@@ -27,10 +30,19 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Walker', 'Character', 'Epic Hero', 'Imperium', 'Morvenn Vahl']
+		keywords: ['Vehicle', 'Walker', 'Character', 'Epic Hero', 'Imperium', 'Morvenn Vahl'],
+		meleeWeapons: [
+			MeleeWeaponName.LanceOfIlluminationStrike,
+			MeleeWeaponName.LanceOfIlluminationSweep
+		],
+		rangeWeapons: [
+			RangedWeaponName.Fidelis,
+			RangedWeaponName.ParagonMissileLauncherPrioris,
+			RangedWeaponName.ParagonMissileLauncherSanctorum
+		]
 	},
 	{
-		name: 'Canoness',
+		name: UnitName.Canoness,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -55,10 +67,23 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Canoness']
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Canoness'],
+		meleeWeapons: [
+			MeleeWeaponName.BlessedBlade,
+			MeleeWeaponName.Chainsword,
+			MeleeWeaponName.PowerWeapon
+		],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.BrazierOfHolyFire,
+			RangedWeaponName.CondemnorBoltgun,
+			RangedWeaponName.InfernoPistol,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Palatine',
+		name: UnitName.Palatine,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -84,10 +109,16 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Palatine']
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Palatine'],
+		meleeWeapons: [MeleeWeaponName.PalatineBlade],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Junith Eruita',
+		name: UnitName.JunithEruita,
 		movement: 6,
 		toughness: 4,
 		save: 2,
@@ -112,10 +143,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Fly', 'Epic Hero', 'Imperium', 'Junith Eruita']
+		keywords: ['Infantry', 'Character', 'Fly', 'Epic Hero', 'Imperium', 'Junith Eruita'],
+		meleeWeapons: [MeleeWeaponName.MaceOfCastigation],
+		rangeWeapons: [RangedWeaponName.TwinMinistorumHeavyFlamer]
 	},
 	{
-		name: 'Missionary',
+		name: UnitName.Missionary,
 		movement: 6,
 		toughness: 3,
 		save: 6,
@@ -140,10 +173,16 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Missionary']
+		keywords: ['Infantry', 'Character', 'Grenades', 'Imperium', 'Missionary'],
+		meleeWeapons: [MeleeWeaponName.Chainsword, MeleeWeaponName.PowerWeapon],
+		rangeWeapons: [
+			RangedWeaponName.Autogun,
+			RangedWeaponName.HolyPistol,
+			RangedWeaponName.MinistorumShotgun
+		]
 	},
 	{
-		name: 'Saint Celestine',
+		name: UnitName.SaintCelestine,
 		movement: 12,
 		toughness: 3,
 		save: 2,
@@ -183,10 +222,12 @@ export const data: readonly Unit[] = [
 			'Character',
 			'Epic Hero',
 			'Saint Celestine'
-		]
+		],
+		meleeWeapons: [MeleeWeaponName.TheArdentBlade],
+		rangeWeapons: [RangedWeaponName.TheArdentBlade]
 	},
 	{
-		name: 'Geminae Superia',
+		name: UnitName.GeminaeSuperia,
 		movement: 12,
 		toughness: 3,
 		save: 2,
@@ -217,10 +258,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium']
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium'],
+		meleeWeapons: [MeleeWeaponName.PowerWeapon],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Triumph of Saint Katherine',
+		name: UnitName.TriumphOfSaintKatherine,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -247,10 +290,12 @@ export const data: readonly Unit[] = [
 			'Epic Hero',
 			'Imperium',
 			'Triumph of Saint Katherine'
-		]
+		],
+		meleeWeapons: [MeleeWeaponName.RelicWeapons],
+		rangeWeapons: [RangedWeaponName.BoltPistols]
 	},
 	{
-		name: 'Ephrael Stern',
+		name: UnitName.EphraelStern,
 		movement: 8,
 		toughness: 3,
 		save: 3,
@@ -276,10 +321,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge']
+		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge'],
+		meleeWeapons: [MeleeWeaponName.Sanctity],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Kyganil of the Bloody Tears',
+		name: UnitName.KyganilOfTheBloodyTears,
 		movement: 8,
 		toughness: 3,
 		save: 6,
@@ -299,10 +346,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge']
+		keywords: ['Infantry', 'Grenades', 'Character', 'Epic Hero', 'Imperium', 'Daemonifuge'],
+		meleeWeapons: [MeleeWeaponName.TheOutcastsWeapons],
+		rangeWeapons: []
 	},
 	{
-		name: 'Battle Sister Squad',
+		name: UnitName.BattleSisterSquad,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -326,10 +375,25 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Battleline', 'Imperium', 'Battle Sisters Squad']
+		keywords: ['Infantry', 'Grenades', 'Battleline', 'Imperium', 'Battle Sisters Squad'],
+		meleeWeapons: [
+			MeleeWeaponName.Chainsword,
+			MeleeWeaponName.CloseCombatWeapon,
+			MeleeWeaponName.PowerWeapon
+		],
+		rangeWeapons: [
+			RangedWeaponName.ArtificerCraftedStormBolter,
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.Boltgun,
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.Meltagun,
+			RangedWeaponName.MinistorumFlamer,
+			RangedWeaponName.MinistorumHeavyFlamer,
+			RangedWeaponName.MultiMelta
+		]
 	},
 	{
-		name: 'Novitiate Superior',
+		name: UnitName.NovitiateSuperior,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -348,10 +412,17 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad'],
+		meleeWeapons: [MeleeWeaponName.CloseCombatWeapon, MeleeWeaponName.PowerWeapon],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.Boltgun,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Sister Novitiate',
+		name: UnitName.SisterNovitiate,
 		movement: 6,
 		toughness: 3,
 		save: 4,
@@ -370,10 +441,16 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Sisters Novitiate Squad'],
+		meleeWeapons: [MeleeWeaponName.CloseCombatWeapon, MeleeWeaponName.NovitiateMeleeWeapons],
+		rangeWeapons: [
+			RangedWeaponName.Autopistol,
+			RangedWeaponName.Autogun,
+			RangedWeaponName.MinistorumFlamer
+		]
 	},
 	{
-		name: 'Aestred Thurga',
+		name: UnitName.AestredThurga,
 		movement: 6,
 		toughness: 3,
 		save: 2,
@@ -400,10 +477,12 @@ export const data: readonly Unit[] = [
 			'Epic Hero',
 			'Imperium',
 			'Aestred Thurga and Agathae Dolan'
-		]
+		],
+		meleeWeapons: [MeleeWeaponName.BladeOfVigil],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Agathae Dolan',
+		name: UnitName.AgathaeDolan,
 		movement: 6,
 		toughness: 3,
 		save: 6,
@@ -430,10 +509,12 @@ export const data: readonly Unit[] = [
 			'Epic Hero',
 			'Imperium',
 			'Aestred Thurga and Agathae Dolan'
-		]
+		],
+		meleeWeapons: [MeleeWeaponName.ScribesStaff],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Imagifier',
+		name: UnitName.Imagifier,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -459,10 +540,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Imagifier']
+		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Imagifier'],
+		meleeWeapons: [MeleeWeaponName.CloseCombatWeapon],
+		rangeWeapons: [RangedWeaponName.BoltPistol, RangedWeaponName.Boltgun]
 	},
 	{
-		name: 'Dialogus',
+		name: UnitName.Dialogus,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -487,10 +570,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Imperium', 'Dialogus']
+		keywords: ['Infantry', 'Character', 'Imperium', 'Dialogus'],
+		meleeWeapons: [MeleeWeaponName.DialogusStaff],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Preacher',
+		name: UnitName.Preacher,
 		movement: 6,
 		toughness: 3,
 		save: 6,
@@ -515,10 +600,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Imperium', 'Preacher']
+		keywords: ['Infantry', 'Character', 'Imperium', 'Preacher'],
+		meleeWeapons: [MeleeWeaponName.Chainsword, MeleeWeaponName.ZealotsVindictor],
+		rangeWeapons: [RangedWeaponName.Autopistol, RangedWeaponName.ZealotsVindictor]
 	},
 	{
-		name: 'Celestian Sacresants',
+		name: UnitName.CelestianSacresants,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -537,10 +624,22 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Celestian Sacresants']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Celestian Sacresants'],
+		meleeWeapons: [
+			MeleeWeaponName.AnointedHalberd,
+			MeleeWeaponName.HallowedMace,
+			MeleeWeaponName.SpearOfTheFaithful
+		],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.InfernoPistol,
+			RangedWeaponName.MinistorumHandFlamer,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Hospitaller',
+		name: UnitName.Hospitaller,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -566,10 +665,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Character', 'Imperium', 'Hospitaller']
+		keywords: ['Infantry', 'Character', 'Imperium', 'Hospitaller'],
+		meleeWeapons: [MeleeWeaponName.ChirurgeonsTools],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Dogmata',
+		name: UnitName.Dogmata,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -594,10 +695,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Dogmata']
+		keywords: ['Infantry', 'Grenades', 'Character', 'Imperium', 'Dogmata'],
+		meleeWeapons: [MeleeWeaponName.MaceOfTheRighteous],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Paragon Warsuits',
+		name: UnitName.ParagonWarsuits,
 		movement: 8,
 		toughness: 6,
 		save: 2,
@@ -616,10 +719,19 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Walker', 'Grenades', 'Imperium', 'Paragon Warsuits']
+		keywords: ['Vehicle', 'Walker', 'Grenades', 'Imperium', 'Paragon Warsuits'],
+		meleeWeapons: [MeleeWeaponName.ParagonWarBlade, MeleeWeaponName.ParagonWarMace],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.MinistorumHeavyFlamer,
+			RangedWeaponName.MultiMelta,
+			RangedWeaponName.ParagonGrenadeLaunchers,
+			RangedWeaponName.ParagonStormBolters
+		]
 	},
 	{
-		name: 'Repentia Superior',
+		name: UnitName.RepentiaSuperior,
 		movement: 7,
 		toughness: 3,
 		save: 3,
@@ -640,10 +752,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad'],
+		meleeWeapons: [MeleeWeaponName.NeuralWhips],
+		rangeWeapons: [RangedWeaponName.BoltPistol]
 	},
 	{
-		name: 'Sisters Repentia',
+		name: UnitName.SistersRepentia,
 		movement: 7,
 		toughness: 3,
 		save: 7,
@@ -664,10 +778,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Repentia Squad'],
+		meleeWeapons: [MeleeWeaponName.PenitentEviscerator],
+		rangeWeapons: []
 	},
 	{
-		name: 'Crusaders',
+		name: UnitName.Crusaders,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -686,10 +802,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 4,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Imperium', 'Crusaders']
+		keywords: ['Infantry', 'Imperium', 'Crusaders'],
+		meleeWeapons: [MeleeWeaponName.PowerWeapon],
+		rangeWeapons: []
 	},
 	{
-		name: 'Death Cult Assassins',
+		name: UnitName.DeathCultAssassins,
 		movement: 7,
 		toughness: 3,
 		save: 5,
@@ -709,10 +827,12 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 5,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Imperium', 'Death Cult Assassins']
+		keywords: ['Infantry', 'Imperium', 'Death Cult Assassins'],
+		meleeWeapons: [MeleeWeaponName.DeathCultPowerBlades],
+		rangeWeapons: []
 	},
 	{
-		name: 'Dominion Squad',
+		name: UnitName.DominionSquad,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -736,10 +856,22 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Dominion Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Dominion Squad'],
+		meleeWeapons: [
+			MeleeWeaponName.Chainsword,
+			MeleeWeaponName.CloseCombatWeapon,
+			MeleeWeaponName.PowerWeapon
+		],
+		rangeWeapons: [
+			RangedWeaponName.ArtificerCraftedStormBolter,
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.Boltgun,
+			RangedWeaponName.Meltagun,
+			RangedWeaponName.MinistorumFlamer
+		]
 	},
 	{
-		name: 'Seraphim Squad',
+		name: UnitName.SeraphimSquad,
 		movement: 12,
 		toughness: 3,
 		save: 3,
@@ -760,10 +892,22 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 5,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Seraphim Squad']
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Seraphim Squad'],
+		meleeWeapons: [
+			MeleeWeaponName.Chainsword,
+			MeleeWeaponName.CloseCombatWeapon,
+			MeleeWeaponName.PowerWeapon
+		],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.InfernoPistol,
+			RangedWeaponName.MinistorumHandFlamer,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Zephyrim Squad',
+		name: UnitName.ZephyrimSquad,
 		movement: 12,
 		toughness: 3,
 		save: 3,
@@ -783,10 +927,16 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 5,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Zephyrim Squad']
+		keywords: ['Infantry', 'Jump Pack', 'Fly', 'Grenades', 'Imperium', 'Zephyrim Squad'],
+		meleeWeapons: [MeleeWeaponName.PowerWeapon],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.PlasmaPistolStandard,
+			RangedWeaponName.PlasmaPistolSupercharge
+		]
 	},
 	{
-		name: 'Retributor Squad',
+		name: UnitName.RetributorSquad,
 		movement: 6,
 		toughness: 3,
 		save: 3,
@@ -810,10 +960,22 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Grenades', 'Imperium', 'Retributor Squad']
+		keywords: ['Infantry', 'Grenades', 'Imperium', 'Retributor Squad'],
+		meleeWeapons: [
+			MeleeWeaponName.Chainsword,
+			MeleeWeaponName.CloseCombatWeapon,
+			MeleeWeaponName.PowerWeapon
+		],
+		rangeWeapons: [
+			RangedWeaponName.BoltPistol,
+			RangedWeaponName.Boltgun,
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.MinistorumHeavyFlamer,
+			RangedWeaponName.MultiMelta
+		]
 	},
 	{
-		name: 'Mortifiers',
+		name: UnitName.Mortifiers,
 		movement: 8,
 		toughness: 6,
 		save: 4,
@@ -836,10 +998,17 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Walker', 'Imperium', 'Mortifiers']
+		keywords: ['Vehicle', 'Walker', 'Imperium', 'Mortifiers'],
+		meleeWeapons: [
+			MeleeWeaponName.PenitentBuzzBlade,
+			MeleeWeaponName.PenitentFlail,
+			MeleeWeaponName.TwinPenitentBuzzBlades,
+			MeleeWeaponName.TwinPenitentFlails
+		],
+		rangeWeapons: [RangedWeaponName.HeavyBolter, RangedWeaponName.MortifierFlamer]
 	},
 	{
-		name: 'Penitent Engines',
+		name: UnitName.PenitentEngines,
 		movement: 8,
 		toughness: 6,
 		save: 4,
@@ -861,10 +1030,17 @@ export const data: readonly Unit[] = [
 			]
 		},
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Walker', 'Imperium', 'Penitent Engines']
+		keywords: ['Vehicle', 'Walker', 'Imperium', 'Penitent Engines'],
+		meleeWeapons: [
+			MeleeWeaponName.PenitentBuzzBlade,
+			MeleeWeaponName.PenitentFlail,
+			MeleeWeaponName.TwinPenitentBuzzBlades,
+			MeleeWeaponName.TwinPenitentFlails
+		],
+		rangeWeapons: [RangedWeaponName.PenitentFlamers]
 	},
 	{
-		name: 'Exorcist',
+		name: UnitName.Exorcist,
 		movement: 10,
 		toughness: 10,
 		save: 3,
@@ -884,10 +1060,17 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Exorcist']
+		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Exorcist'],
+		meleeWeapons: [MeleeWeaponName.ArmouredTracks],
+		rangeWeapons: [
+			RangedWeaponName.ExorcistConflagrationRockets,
+			RangedWeaponName.ExorcistMissileLauncher,
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.HunterKillerMissile
+		]
 	},
 	{
-		name: 'Castigator',
+		name: UnitName.Castigator,
 		movement: 10,
 		toughness: 10,
 		save: 3,
@@ -909,10 +1092,18 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Castigator']
+		keywords: ['Vehicle', 'Smoke', 'Imperium', 'Castigator'],
+		meleeWeapons: [MeleeWeaponName.ArmouredTracks],
+		rangeWeapons: [
+			RangedWeaponName.CastigatorAutocannons,
+			RangedWeaponName.CastigatorBattleCannon,
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.HunterKillerMissile,
+			RangedWeaponName.StormBolter
+		]
 	},
 	{
-		name: 'Sororitas Rhino',
+		name: UnitName.SororitasRhino,
 		movement: 12,
 		toughness: 9,
 		save: 3,
@@ -942,10 +1133,12 @@ export const data: readonly Unit[] = [
 			'Smoke',
 			'Imperium',
 			'Sororitas Rhino'
-		]
+		],
+		meleeWeapons: [MeleeWeaponName.ArmouredTracks],
+		rangeWeapons: [RangedWeaponName.HunterKillerMissile, RangedWeaponName.StormBolter]
 	},
 	{
-		name: 'Immolator',
+		name: UnitName.Immolator,
 		movement: 12,
 		toughness: 10,
 		save: 3,
@@ -966,10 +1159,18 @@ export const data: readonly Unit[] = [
 		},
 		invulnerableSave: 6,
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Vehicle', 'Smoke', 'Transport', 'Dedicated Transport', 'Imperium', 'Immolator']
+		keywords: ['Vehicle', 'Smoke', 'Transport', 'Dedicated Transport', 'Imperium', 'Immolator'],
+		meleeWeapons: [MeleeWeaponName.ArmouredTracks],
+		rangeWeapons: [
+			RangedWeaponName.HeavyBolter,
+			RangedWeaponName.HunterKillerMissile,
+			RangedWeaponName.ImmolationFlamers,
+			RangedWeaponName.TwinHeavyBolter,
+			RangedWeaponName.TwinMultiMelta
+		]
 	},
 	{
-		name: 'Arco-Flagellants',
+		name: UnitName.ArcoFlagellants,
 		movement: 7,
 		toughness: 3,
 		save: 7,
@@ -989,6 +1190,8 @@ export const data: readonly Unit[] = [
 			]
 		},
 		factionKeyword: 'Adepta Sororitas',
-		keywords: ['Infantry', 'Imperium', 'Arco-flagellants']
+		keywords: ['Infantry', 'Imperium', 'Arco-Flagellants'],
+		meleeWeapons: [MeleeWeaponName.ArcoFlails],
+		rangeWeapons: []
 	}
 ];
